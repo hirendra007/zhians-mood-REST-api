@@ -13,5 +13,5 @@ app.get('/', (req, res) => {
     res.send('🎉 Zhians Mood API is live! Try /api/log-entry');
 });
 app.use('/api', logRoutes_1.default);
-exports.default = app;
 const PORT = process.env.PORT || 3000;
+exports.default = app;

@@ -13,5 +13,5 @@ app.get('/', (req, res) => {
 app.use('/api', logRoutes);
 
 
-export default app;
 const PORT = process.env.PORT || 3000;
+export default app;
