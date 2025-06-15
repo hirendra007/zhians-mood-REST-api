@@ -2,11 +2,11 @@
   "name": "zhians-mood-api",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+   "scripts": {
     "dev": "ts-node-dev --respawn src/server.ts",
-    "build": "tsc",
+    "build": "tsc && prisma generate",
     "start": "node dist/server.js",
-    "postinstall": "prisma generate"
+    "vercel-build": "prisma generate && tsc"
   },
   "keywords": [],
   "author": "",
