@@ -14,6 +14,3 @@ app.get('/', (req, res) => {
 });
 app.use('/api', logRoutes_1.default);
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
